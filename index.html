@@ -3,6 +3,9 @@
 	<head>
 		<title>Home</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script type="text/javascript">
+			Ddocument.getElementById("time").innerHTML = (new Date).getTime();
+		</script>
 	</head>
 	<body>
 		<h1><a href="http://akuls.github.io">Akul Siddalingaswamy</a></h1>
@@ -22,7 +25,7 @@
 		<div class="container">
     		<div class="main_page_left">
         		<img src = "images/self_3.jpg" width="65%" height="65%"><br>
-				<p1><i>Website last updated on 01-July-2017</i></p1>
+				Current time: <p1 id="time"></p1>
     		</div>
     		<div class="main_page_right">
 	    		<p> 
