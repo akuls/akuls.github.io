@@ -4,10 +4,16 @@
 		<title>Home</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<script type="text/javascript">
-			Ddocument.getElementById("time").innerHTML = (new Date).getTime();
+			function getTime()
+			{
+				while(1)
+				{
+					Ddocument.getElementById("time").innerHTML = (new Date).getTime();	
+				}
+			}
 		</script>
 	</head>
-	<body>
+	<body onload = "getTime()">
 		<h1><a href="http://akuls.github.io">Akul Siddalingaswamy</a></h1>
 		<nav>
 			<ul>
