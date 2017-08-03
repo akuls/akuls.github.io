@@ -4,9 +4,15 @@
 		<title>Home</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<script type="text/javascript">
+			function getTime()
+			{
+				alert("Yo");
+				document.getElementById("time").innerHTML = (new Date()).getTime();
+				setTimeout("getTime()", 1000);
+			}
 		</script>
 	</head>
-	<body>
+	<body onload = "getTime()">
 		<h1><a href="http://akuls.github.io">Akul Siddalingaswamy</a></h1>
 		<nav>
 			<ul>
@@ -24,7 +30,7 @@
 		<div class="container">
     		<div class="main_page_left">
         		<img src = "images/self_3.jpg" width="65%" height="65%"><br>
-				Current time: <p1 id="time">12345</p1>
+				Current time: <p1 id="time"></p1>
     		</div>
     		<div class="main_page_right">
 	    		<p> 
