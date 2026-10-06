@@ -1,2 +1,3 @@
 # akuls.github.io
-Personal website
+
+Old personal website repository. Redirects to [akuls.dev](https://akuls.dev/).
